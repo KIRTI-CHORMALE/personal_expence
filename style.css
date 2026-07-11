@@ -1,0 +1,92 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: #f5f6fa;
+  color: #2c2c2c;
+}
+
+h1 { text-align: center; }
+
+#expense-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#expense-form input,
+#expense-form select {
+  flex: 1;
+  min-width: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#expense-form button {
+  padding: 8px 16px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#expense-form button:hover { background: #43a047; }
+
+.summary {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th { background: #eee; }
+
+.category-tag {
+  padding: 3px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.85em;
+}
+
+.Food { background: #4CAF50; }
+.Transport { background: #2196F3; }
+.Bills { background: #f44336; }
+.Fun { background: #FF9800; }
+.Other { background: #9E9E9E; }
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #f44336;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#export-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
